@@ -10,15 +10,15 @@ BLEService P3D_Service("0x2A30");
 BLEService RN_Service("0x2A3D");
 
 //Creates a gatt characteristic that holds the Indoor Position Configuration, both readable and writable by central
-BLEUnsignedIntCharacteristic IndoorPositioningConfiguration ("0x2AAD", BLERead | BLEWrite);
+BLEUnsignedIntCharacteristic IndoorPositioningConfiguration ("0x2AAD", BLERead | BLEWrite | BLENotify);
 //Creates a gatt characteristic that holds the floor number, both readable and writable by central
-BLEUnsignedIntCharacteristic FloorNumber ("0x2AB2", BLERead | BLEWrite);
+BLEUnsignedIntCharacteristic FloorNumber ("0x2AB2", BLERead | BLEWrite | BLENotify);
 //Creates a gatt characteristic that holds the Location Name, both readable and writable by central
-BLEUnsignedCharCharacteristic LocationName ("0x2AB5", BLERead | BLEWrite);
+BLEUnsignedCharCharacteristic LocationName ("0x2AB5", BLERead | BLEWrite | BLENotify);
 //Creates a gatt characteristic that holds the 3D Positioning, both readable and writable by central
-BLEUnsignedIntCharacteristic Position3D ("0x2A30", BLERead | BLEWrite);
+BLEUnsignedIntCharacteristic Position3D ("0x2A30", BLERead | BLEWrite | BLENotify);
 //Creates a gatt characteristic that holds the Routine Name, both readable and writable by central
-BLEUnsignedCharCharacteristic RoutineName ("0x2A3D", BLERead | BLEWrite);
+BLEUnsignedCharCharacteristic RoutineName ("0x2A3D", BLERead | BLEWrite | BLENotify);
 
 void setup() {
   Serial.begin(9600);    // initialize serial communication
