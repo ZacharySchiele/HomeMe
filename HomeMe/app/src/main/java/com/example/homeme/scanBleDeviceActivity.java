@@ -15,14 +15,6 @@ public class scanBleDeviceActivity extends AppCompatActivity {
 
     private Button StartScan;
 
-    @Override
-    protected void onResume() {
-        super.onResume();
-        if (!getPackageManager().hasSystemFeature(PackageManager.FEATURE_BLUETOOTH)) {
-            finish();
-        }
-    }
-
     @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN_MR2)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
