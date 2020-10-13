@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">HomeMe</string>
     <string name="ble_not_supported">BLE Not Supported</string>
+    <string name="title_devices">Devices</string>
+    <string name="error_bluetooth_not_supported">Eroor Bluetooth Not Supported</string>
+    <string name="unknown_device">Unknown Device</string>
 </resources>
